@@ -1,0 +1,10 @@
+<div class="character-grid">
+    <a [routerLink]="['/details', character.name]" style="text-decoration: none;" *ngFor="let character of characters">
+      <mat-card class="character-card">
+        <img mat-card-image [src]="character.image" alt="{{ character.name }}">
+        <mat-card-title>{{ character.name }}</mat-card-title>
+        <mat-card-subtitle>House: {{ character.house || 'None' }}</mat-card-subtitle>
+      </mat-card>
+    </a>
+  </div>
+  

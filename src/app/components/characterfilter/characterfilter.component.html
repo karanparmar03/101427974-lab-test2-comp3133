@@ -1,0 +1,17 @@
+<div style="padding: 20px;">
+    <mat-form-field appearance="fill" style="width: 300px;">
+      <mat-label>Select House</mat-label>
+      <mat-select [(ngModel)]="selectedHouse" (selectionChange)="onHouseChange()">
+        <mat-option *ngFor="let house of houses" [value]="house">{{ house }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <div class="character-grid" *ngIf="characters.length > 0">
+      <mat-card *ngFor="let character of characters" class="character-card">
+        <img mat-card-image [src]="character.image" alt="{{ character.name }}">
+        <mat-card-title>{{ character.name }}</mat-card-title>
+        <mat-card-subtitle>House: {{ character.house }}</mat-card-subtitle>
+      </mat-card>
+    </div>
+  </div>
+  

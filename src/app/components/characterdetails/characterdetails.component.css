@@ -1,0 +1,43 @@
+mat-card {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 16px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+  }
+  
+  mat-card img {
+    max-width: 220px;
+    height: auto;
+    margin: 16px auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  mat-card-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+  }
+  
+  mat-card-content {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+  
+  mat-card-content p {
+    margin: 8px 0;
+  }
+  
+  mat-card-content ul {
+    padding-left: 20px;
+    margin-top: 0;
+  }
+  
+  mat-card-content ul li {
+    margin-bottom: 4px;
+  }
+  
